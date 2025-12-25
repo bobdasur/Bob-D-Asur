@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-/* NAVBAR */
+/* NAV */
 .navbar {
   background: #111;
   color: #fff;
@@ -41,7 +41,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
@@ -54,9 +54,9 @@ body {
   font-size: 1.2rem;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 10px;
   padding: 10px 30px;
   border: 2px solid #fff;
   color: #fff;
@@ -70,6 +70,10 @@ body {
   color: #243b55;
 }
 
+.btn.light {
+  border-color: #fff;
+}
+
 /* SECTIONS */
 .section {
   padding: 70px 20px;
@@ -78,17 +82,32 @@ body {
   text-align: center;
 }
 
-.section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
 .section.dark {
   background: #222;
   color: #fff;
 }
 
-/* PROJECT CARDS */
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tags span {
+  background: #444;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -98,8 +117,7 @@ body {
 
 .card {
   background: #fff;
-  color: #333;
-  padding: 30px;
+  padding: 25px;
   border-radius: 10px;
 }
 
